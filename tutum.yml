@@ -1,11 +1,10 @@
 web:
-  build: .
+  image: matthewbaggett/kickbot:latest
   ports:
-    - "8000:80"
+    - "80"
   links:
-    - "redis:redis"
-  volumes:
-    - .:/app
+    - "redis"
+    - "mysql:db"
 
 mysql:
   image: mysql
