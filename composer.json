@@ -8,6 +8,10 @@
         }
     ],
     "require": {
-        "thru.io/active_record": "^0.4.0"
+        "thru.io/active_record": "^0.4.0",
+        "slim/slim": "^3.0",
+        "symfony/yaml": "^3.0",
+        "irazasyed/telegram-bot-sdk": "^1.0",
+        "raveren/kint": "^1.0"
     }
 }

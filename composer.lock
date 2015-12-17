@@ -4,9 +4,787 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "be031b96880af3bc4b979604e87e339d",
-    "content-hash": "5b23caefbde549be10b333770a0f115f",
+    "hash": "68bbd434559337aa3e3022c9bbd76f45",
+    "content-hash": "e0fbcc018d2d1fdff2c8306dab850f63",
     "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "danielstjules/stringy",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielstjules/Stringy.git",
+                "reference": "4749c205db47ee5b32e8d1adf6d9aff8db6caf3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/4749c205db47ee5b32e8d1adf6d9aff8db6caf3b",
+                "reference": "4749c205db47ee5b32e8d1adf6d9aff8db6caf3b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stringy\\": "src/"
+                },
+                "files": [
+                    "src/Create.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel St. Jules",
+                    "email": "danielst.jules@gmail.com",
+                    "homepage": "http://www.danielstjules.com"
+                }
+            ],
+            "description": "A string manipulation library with multibyte support",
+            "homepage": "https://github.com/danielstjules/Stringy",
+            "keywords": [
+                "UTF",
+                "helpers",
+                "manipulation",
+                "methods",
+                "multibyte",
+                "string",
+                "utf-8",
+                "utility",
+                "utils"
+            ],
+            "time": "2015-07-23 00:54:12"
+        },
+        {
+            "name": "doctrine/inflector",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/inflector.git",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Inflector\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Common String Manipulations with regard to casing and singular/plural rules.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "inflection",
+                "pluralize",
+                "singularize",
+                "string"
+            ],
+            "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-11-23 00:47:50"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2015-10-15 22:28:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2015-11-03 01:34:55"
+        },
+        {
+            "name": "illuminate/contracts",
+            "version": "v5.1.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/contracts.git",
+                "reference": "e2b71fdbeeb3438748dca5f497e205888788a883"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/e2b71fdbeeb3438748dca5f497e205888788a883",
+                "reference": "e2b71fdbeeb3438748dca5f497e205888788a883",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Contracts\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Contracts package.",
+            "homepage": "http://laravel.com",
+            "time": "2015-09-24 11:16:48"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "v5.1.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/support.git",
+                "reference": "2c5ec47f0c7befaa394072184c14dc626665b6ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/2c5ec47f0c7befaa394072184c14dc626665b6ac",
+                "reference": "2c5ec47f0c7befaa394072184c14dc626665b6ac",
+                "shasum": ""
+            },
+            "require": {
+                "danielstjules/stringy": "~1.8",
+                "doctrine/inflector": "~1.0",
+                "ext-mbstring": "*",
+                "illuminate/contracts": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "jeremeamia/superclosure": "Required to be able to serialize closures (~2.0).",
+                "paragonie/random_compat": "Provides a compatible interface like PHP7's random_bytes() in PHP 5 projects (~1.1).",
+                "symfony/var-dumper": "Improves the dd function (2.7.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Support\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Support package.",
+            "homepage": "http://laravel.com",
+            "time": "2015-11-29 16:58:05"
+        },
+        {
+            "name": "irazasyed/telegram-bot-sdk",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irazasyed/telegram-bot-sdk.git",
+                "reference": "c0989e6e3ac09a86fae668648a52ee2bfd229824"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irazasyed/telegram-bot-sdk/zipball/c0989e6e3ac09a86fae668648a52ee2bfd229824",
+                "reference": "c0989e6e3ac09a86fae668648a52ee2bfd229824",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "illuminate/support": "5.0.*|5.1.*",
+                "php": ">=5.5.0"
+            },
+            "suggest": {
+                "irazasyed/larasupport": "Allows you to use any Laravel Package in Lumen by adding support!"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Telegram\\Bot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Syed Irfaq R.",
+                    "email": "syed+gh@lukonet.com",
+                    "homepage": "https://github.com/irazasyed"
+                }
+            ],
+            "description": "The Unofficial Telegram Bot API PHP SDK",
+            "homepage": "https://github.com/irazasyed/telegram-bot-sdk",
+            "keywords": [
+                "laravel",
+                "laravel telegram",
+                "telegram",
+                "telegram bot",
+                "telegram bot api",
+                "telegram php",
+                "telegram sdk"
+            ],
+            "time": "2015-09-07 23:01:36"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "31fa86924556b80735f98b294a7ffdfb26789f22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/31fa86924556b80735f98b294a7ffdfb26789f22",
+                "reference": "31fa86924556b80735f98b294a7ffdfb26789f22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2015-06-18 19:15:47"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2015-09-11 15:10:35"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
+            "name": "raveren/kint",
+            "version": "1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raveren/kint.git",
+                "reference": "c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/raveren/kint/zipball/c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb",
+                "reference": "c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Kint.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rokas Šleinius",
+                    "homepage": "https://github.com/raveren"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/raveren/kint/contributors"
+                }
+            ],
+            "description": "Kint - debugging helper for PHP developers",
+            "homepage": "https://github.com/raveren/kint",
+            "keywords": [
+                "debug",
+                "kint",
+                "php"
+            ],
+            "time": "2015-09-16 14:09:00"
+        },
+        {
+            "name": "slim/slim",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "3b06f0f2d84dabbe81b6cea46ace46a3e883253e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/3b06f0f2d84dabbe81b6cea46ace46a3e883253e",
+                "reference": "3b06f0f2d84dabbe81b6cea46ace46a3e883253e",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "nikic/fast-route": "^0.6",
+                "php": ">=5.5.0",
+                "pimple/pimple": "^3.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\": "Slim"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Allen",
+                    "email": "rob@akrabat.com",
+                    "homepage": "http://akrabat.com"
+                },
+                {
+                    "name": "Josh Lockhart",
+                    "email": "hello@joshlockhart.com",
+                    "homepage": "https://joshlockhart.com"
+                },
+                {
+                    "name": "Gabriel Manricks",
+                    "email": "gmanricks@me.com",
+                    "homepage": "http://gabrielmanricks.com"
+                },
+                {
+                    "name": "Andrew Smith",
+                    "email": "a.smith@silentworks.co.uk",
+                    "homepage": "http://silentworks.co.uk"
+                }
+            ],
+            "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
+            "homepage": "http://slimframework.com",
+            "keywords": [
+                "api",
+                "framework",
+                "micro",
+                "router"
+            ],
+            "time": "2015-12-07 14:11:09"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-11-30 12:36:17"
+        },
         {
             "name": "thru.io/active_record",
             "version": "0.4.0",
