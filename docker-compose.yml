@@ -1,0 +1,19 @@
+web:
+  build: .
+  ports:
+    - "8000:80"
+  links:
+    - "redis:redis"
+  volumes:
+    - .:/app
+
+mysql:
+  image: mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=5aQNxsB58752fN
+    - MYSQL_USER=kickbot
+    - MYSQL_PASSWORD=5aQNxsB58752fN
+    - MYSQL_DATABASE=kickbot
+
+redis:
+  image: redis
