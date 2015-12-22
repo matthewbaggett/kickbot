@@ -5,6 +5,8 @@ web:
   links:
     - "redis"
     - "mysql:db"
+  environment:
+   - VIRTUAL_HOST=kickbot.telegram.thru.io
 
 mysql:
   image: mysql

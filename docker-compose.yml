@@ -1,4 +1,4 @@
-web:
+bot:
   build: .
   ports:
     - "8000:80"
