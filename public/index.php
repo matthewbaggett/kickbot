@@ -14,7 +14,7 @@ $app->get('/telegram/webhook/{key}', function (\Slim\Http\Request $request, \Sli
     $response->getBody()->write("Hello telegram!");
 
     return $response;
-})->setName('hello');
+});
 
 $app->get('/hello/{name}', function( \Slim\Http\Request $request, \Slim\Http\Response $response, $args){
     $name = $request->getAttribute('name');
@@ -28,6 +28,11 @@ $app->get('telegram/setup', function( \Slim\Http\Request $request, \Slim\Http\Re
     $telegramCallbackAuth = $telegram->setWebhook("https://kickbot.telegram.thru.io/telegram/webhook/{$config['telegram_api_key']}");
     \Kint::dump($telegramCallbackAuth);
     exit;
+});
+
+$app->get('.well-known/acme-challenge/El1K2GOuLyDvjk9-uM8P-Fge_oDMeYHYBL_VVvdvT4s', function( \Slim\Http\Request $request, \Slim\Http\Response $response, $args){
+    $response->getBody()->write("El1K2GOuLyDvjk9-uM8P-Fge_oDMeYHYBL_VVvdvT4s.BjQMlU5nwgsexb_DdA7zyb5OWcbghyA_u5G5PCeY610");
+    return $response;
 });
 
 $app->run();
