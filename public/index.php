@@ -6,7 +6,6 @@ use Telegram\Bot\Api as TelegramApi;
 
 $config = Yaml::parse(file_get_contents('../config.yml'));
 $telegram = new TelegramApi($config['telegram_api_key']);
-$response = $telegram->setWebhook("https://kickbot.telegram.thru.io/telegram/webhook/{config['telegram_api_key']");
 
 $app = new \Slim\App();
 $app->get('/telegram/webhook/{key}', function (\Slim\Http\Request $request, \Slim\Http\Response $response, $args) {
@@ -17,12 +16,18 @@ $app->get('/telegram/webhook/{key}', function (\Slim\Http\Request $request, \Sli
     return $response;
 })->setName('hello');
 
-
-$app->get('/hello/{name}', function ($request, $response, $args) {
+$app->get('/hello/{name}', function( \Slim\Http\Request $request, \Slim\Http\Response $response, $args){
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
 
     return $response;
 })->setName('hello');
+
+$app->get('telegram/setup', function( \Slim\Http\Request $request, \Slim\Http\Response $response, $args){
+    global $config, $telegram;
+    $telegramCallbackAuth = $telegram->setWebhook("https://kickbot.telegram.thru.io/telegram/webhook/{$config['telegram_api_key']}");
+    \Kint::dump($telegramCallbackAuth);
+    exit;
+});
 
 $app->run();

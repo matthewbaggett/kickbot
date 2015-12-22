@@ -1,5 +1,5 @@
 web:
-  image: matthewbaggett/kickbot:latest
+  image: tutum.co/matthewbaggett/kickbot:latest
   ports:
     - "80"
   links:
@@ -7,6 +7,8 @@ web:
     - "mysql:db"
   environment:
    - VIRTUAL_HOST=kickbot.telegram.thru.io
+  tags:
+   - Kimsufi
 
 mysql:
   image: mysql
@@ -15,6 +17,10 @@ mysql:
     - MYSQL_USER=kickbot
     - MYSQL_PASSWORD=5aQNxsB58752fN
     - MYSQL_DATABASE=kickbot
+  tags:
+   - Kimsufi
 
 redis:
   image: redis
+  tags:
+   - Kimsufi
