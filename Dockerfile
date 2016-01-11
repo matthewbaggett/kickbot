@@ -53,7 +53,7 @@ RUN cd /app && composer install
 RUN a2enmod rewrite && /etc/init.d/apache2 restart
 
 # Install Telegram CLI client
-RUN cd TelegramCli && ./configure && make
+RUN export ac_cv_func_malloc_0_nonnull=yes && cd /app/TelegramCli && ./configure && make
 
 # Add ports.
 EXPOSE 80
