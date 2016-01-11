@@ -1,0 +1,3 @@
+[submodule "TelegramCli"]
+	path = TelegramCli
+	url = https://github.com/vysheng/tg.git
