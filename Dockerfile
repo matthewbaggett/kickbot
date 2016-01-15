@@ -38,12 +38,19 @@ RUN apt-get update && \
 # Use the crontab file
 #RUN crontab /root/crons.conf
 
+# Create app dir
+RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app/public /var/www/html
+ADD . /app
+
+# Install Telegram CLI client
+RUN cd /app && git clone --recursive https://github.com/vysheng/tg.git Telegram_Cli 
+RUN export ac_cv_func_malloc_0_nonnull=yes && cd /app/Telegram_Cli && ./configure && make
+
+# Fix PHP
 RUN sed -i "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Configure /app folder with sample app
-RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app/public /var/www/html
-ADD . /app
 ADD docker/ApacheSiteConf.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Run Composer
@@ -51,9 +58,6 @@ RUN cd /app && composer install
 
 # Enable mod_rewrite
 RUN a2enmod rewrite && /etc/init.d/apache2 restart
-
-# Install Telegram CLI client
-RUN export ac_cv_func_malloc_0_nonnull=yes && cd /app/TelegramCli && ./configure && make
 
 # Add ports.
 EXPOSE 80
