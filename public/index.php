@@ -1,6 +1,5 @@
 <?php
-require_once("../vendor/autoload.php");
-
+require_once("../bootstrap.php");
 use Symfony\Component\Yaml\Yaml;
 use Telegram\Bot\Api as TelegramApi;
 

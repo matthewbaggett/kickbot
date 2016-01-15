@@ -19,6 +19,16 @@ RUN apt-get update && \
         php-pear \
         php5-dev \
         php-apc && \
+    apt-get -yq install \
+        libreadline-dev \
+        libconfig-dev \
+        libssl-dev \
+        lua5.2 \
+        liblua5.2-dev \
+        libevent-dev \
+        libjansson-dev \
+        libpython-dev \
+        make && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -41,6 +51,9 @@ RUN cd /app && composer install
 
 # Enable mod_rewrite
 RUN a2enmod rewrite && /etc/init.d/apache2 restart
+
+# Install Telegram CLI client
+RUN cd TelegramCli && ./configure && make
 
 # Add ports.
 EXPOSE 80

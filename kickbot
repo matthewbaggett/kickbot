@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+require_once("bootstrap.php");
+
+while(true){
+    sleep(1);
+
+}
+
